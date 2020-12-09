@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    background: rgb(46, 44, 44);
+}
+.sear{
+    display: flex;
+    position: absolute;
+    background-color: #2f3640;
+    height: 30px;
+    border-radius: 30px;
+    padding: 7px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+.search_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2f3640;
+    width: 30px;
+    height: 30px;
+    border-radius: 30%;
+}
+.inp{
+    border: none;
+    outline: none;
+    background: none;
+    color: #fff;
+    font-size: 20px;
+    height: 30px;
+    transition: 1s;
+    line-height: 40px;
+    width: 0;
+}
+.sear:hover .inp{
+    transition: 1.5s;
+    width: 240px;
+    padding: 0 6px;
+}
+header{
+    width: 100%;
+    display: inline-flex;
+    background: rgb(70, 72, 85);
+    height: 45px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+}
+.m{
+    position: absolute;
+    width: 40px;
+    display: flex;
+    background: none;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 35px;
+    color: #fff;
+    top: 0;
+    left: var(--x);
+    align-items: center;
+    justify-content: center;
+}
+.m>img{
+    width: 70px;
+    height: 70px;
+}
+.l{
+    position: fixed;
+    left: -320px;
+    top: 0;
+    width: 320px;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background: rgba(55, 59, 70, 0.856);
+    z-index: 99;
+    transition: 1s;
+}
+header>h1{
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    width: auto;
+    margin: auto;
+}
+@media (max-width: 860px){
+    header>h1{
+        display: flex;
+        font-family: 'Poppins', sans-serif;
+        color: #fff;
+        width: auto;
+        margin: auto;
+        font-size: 2em;
+    }
+    .sear{
+        display: flex;
+        position: absolute;
+        background-color: #2f3640;
+        height: 30px;
+        border-radius: 30px;
+        padding: 7px;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+    .search_img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #2f3640;
+        width: 30px;
+        height: 30px;
+        border-radius: 30%;
+    }
+    .inp{
+        border: none;
+        outline: none;
+        background: none;
+        color: #fff;
+        font-size: 20px;
+        height: 30px;
+        transition: 1s;
+        line-height: 10px;
+        width: 0;
+    }
+    .sear:hover .inp{
+        transition: 1.5s;
+        width: 170px;
+        padding: 0 6px;
+    }
+}
