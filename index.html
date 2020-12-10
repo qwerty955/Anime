@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://purepng.com/public/uploads/large/purepng.com-pokeballpokeballdevicepokemon-ballpokemon-capture-ball-17015278258617bdog.png" type="image/x-icon">
+    <title>Anime</title>
+</head>
+<body>
+    <header>
+        <div class="sear" id="sear">
+            <input type="text" class="inp" id="inp" placeholder="search">
+            <img src="https://www.freepnglogos.com/uploads/search-png/search-icon-clip-art-clkerm-vector-clip-art-online-22.png" alt="" class="search_img" id="search_img" onclick="searching(document.getElementById('inp').value)">
+        </div>
+        <H1>ANIMES</H1>
+        <div class="m" id="m">
+            <img src="https://icon-library.com/images/white-menu-icon/white-menu-icon-12.jpg" alt="">
+        </div>
+        <div class="l" id="l">
+                <ul class="list-group list-group-flush">
+                    <li>
+                        <input class="form-check-input" type="radio" name="r" id="flexRadioDefault1" onclick="c('')">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          all
+                        </label>
+                    </li>
+                    <li>
+                        <input class="form-check-input" type="radio" name="r" id="flexRadioDefault2" onclick="c('filter[categories]=adventure')">
+                        <label class="form-check-label" for="flexRadioDefault2">
+                          adventure
+                        </label>
+                    </li>       
+                       <li>
+                        <input class="form-check-input" type="radio" name="r" id="flexRadioDefault2" onclick="c('filter[categories]=fantasy')">
+                        <label class="form-check-label" for="flexRadioDefault2">
+                          fantasy
+                        </label>
+                       </li>
+                       <li>
+                        <input class="form-check-input" type="radio" name="r" id="flexRadioDefault2" onclick="c('filter[categories]=shounen')">
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            shounen
+                        </label>
+                       </li>
+                       <li>
+                        <input class="form-check-input" type="radio" name="r" id="flexRadioDefault2" onclick="c('filter[categories]=kodomo')">
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            kodomo
+                        </label>
+                       </li>
+                       <li>
+                        <input class="form-check-input" type="radio" name="r" id="flexRadioDefault2" onclick="c('filter[categories]=shojo')">
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            shojo
+                        </label>
+                       </li>
+                       <li>
+                        <input class="form-check-input" type="radio" name="r" id="flexRadioDefault2" onclick="c('filter[categories]=seinen')">
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            seinen
+                        </label>
+                       </li>
+                       <li>
+                        <input class="form-check-input" type="radio" name="r" id="flexRadioDefault2" onclick="c('filter[categories]=josei')">
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            josei
+                        </label>
+                       </li>
+                       <li>
+                        <input class="form-check-input" type="radio" name="r" id="flexRadioDefault2" onclick="c('filter[categories]=harem')">
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            harem
+                        </label>
+                       </li>
+                       <li>
+                        <input class="form-check-input" type="radio" name="r" id="flexRadioDefault2" onclick="c('filter[categories]=hentai')">
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            Hentai
+                        </label>
+                       </li>
+                       <li>
+                        <input class="form-check-input" type="radio" name="r" id="flexRadioDefault2" onclick="c('filter[categories]=drama')">
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            drama
+                        </label>
+                       </li>
+                       <li>
+                        <input class="form-check-input" type="radio" name="r" id="flexRadioDefault2" onclick="c('filter[categories]=romance')">
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            romance
+                        </label>
+                       </li>
+                       <li>
+                        <input class="form-check-input" type="radio" name="r" id="flexRadioDefault2" onclick="c('filter[categories]=horror')">
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            horror
+                        </label>
+                       </li>
+                       <li>
+                        <input class="form-check-input" type="radio" name="r" id="flexRadioDefault2" onclick="c('filter[categories]=comedy')">
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            comedy
+                        </label>
+                       </li>
+                </ul>
+        </div>
+    </header>
+    <h1 class="q">SEARCHING RESULTS</h1>
+    <div class="row row-cols-1 row-cols-md-3 g-0" id="con2">
+
+    </div>
+    <h1>Recommend</h1>
+    <div class="row row-cols-1 row-cols-md-3 g-0" id="con">
+
+    </div>
+    <a class="fa" id="fa">More</a>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
